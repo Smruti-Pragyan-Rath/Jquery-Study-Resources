@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Line 1</p>
+    <p id="a1">Line 2</p>
+    <p id="a2">Line 3</p>
+    <p class="sentence">Line 4</p>
+    <p class="shapes">Line 5</p>
+
+</body>
+<script src="js/jquery-3.7.1.min.js"> </script>
+<script>
+    //jQuery Syntax -> $('selector').function()
+    $('p').click(function () {
+        console.log("YOU CLICKED ON LINE 1");
+        $(this).hide();
+    })
+    //Note- here 'p' is the selector and click is the function 
+    //Note- The this function in the above code -> to the selector that is clicked. 
+
+
+    //We can also select from ids and class
+    $('#a1').click(function () {//example of using id
+        document.write("Hello World");
+    })
+
+    $('.shapes').click(function () {//example of using class
+        document.write("We are reading jQuery");
+    })
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a1">Head 1</p>
+    <p id="a2">Head 2</p>
+    <p id="a3">Head 3</p>
+    <p id="a4">Head 4</p>
+    <button id="a5">Toggle Button</button>
+    <div id="but">Hudson Volcano is a volcano in the rugged mountains of southern Chile. Lying in the Southern Volcanic Zone of the Andes, it was formed by the subduction of the oceanic Nazca Plate under the continental South American Plate. Hudson has the form of a 10-kilometre-wide (6-mile) volcanic caldera filled with ice. The volcano has erupted numerous times in the past 2.5 million years forming widespread tephra deposits, and is the most active volcano in the region. Four large eruptions have taken place in the past 20,000 years: 17,30017,440 before present (BP), 7,750 BP, 4,200 BP, and in 1991. The 7,750 BP eruption was among the most intense volcanic eruptions in South America during the Holocene, devastated the local ecosystem and may have caused substantial shifts in human settlement and lifestyle. During the 1991 eruption, volcanic ash covered a large area in Chile and Argentina, and was deposited as far as Antarctica. </div>
+    
+    
+    
+
+    
+</body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+    //On function -> is used to pass multiple events
+    $('#a1').on({
+        mouseleave : function(){console.log("You left")},
+        mouseenter : function(){console.log("You Entered")},
+        
+    })
+
+    //Hide and Show functions can be used to hide and show after a desired time
+
+    $('#but').hide(2000);
+    $('#but').show(2000);
+
+     //slideup and slidedown functions can be used to hide and show after a desired time
+    // $('#but').slideUp(2000);
+    // $('#but').slideDown(2000);
+
+
+
+
+
+
+
+
+</script>
+</html>

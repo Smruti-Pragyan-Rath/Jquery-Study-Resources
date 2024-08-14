@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+   
+
+<body>
+    <p>Line 1</p>
+    <p id="a1">Line 2</p>
+    <p id="a2">Line 3</p>
+    <p class="sentence">Line 4</p>
+    <p class="shapes">Line 5</p>
+
+</body>
+<script src="js/jquery-3.7.1.min.js"> </script>
+<script>
+    //There are multiple events that can used as functions
+
+    //Events in jQuery
+    //Mouse Events- click, dblclick, mouseenter, mouseleave
+    //Keyboard Events- Keypress, Keydown, MediaStatusKeymap
+    //form events- Submit, change, focus, blur
+    //document/window events- load, resize, scroll
+
+    $('#a1').dblclick(function () {//example of using id
+        console.log("You double clicked on this");
+    })
+
+    $('.shapes').mouseenter(function(){
+        console.log("You came here");
+    },
+)
+   $('.shapes').mouseleave(function(){
+    console.log("Thanks for coming", this)
+   })
+
+  
+
+
+</script>
+
+</html>
